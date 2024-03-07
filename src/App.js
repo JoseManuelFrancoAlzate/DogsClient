@@ -8,7 +8,7 @@ import SearchDogs from './components/SearchDogs/SearchDogs';
 import  DogsCreation from './components/DogsCreate/DogsCreate';
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://localhost:3001/"
+axios.defaults.baseURL = "https://dogsback-rl6u.onrender.com/"
 
 function App() {
   const navigate = useNavigate()
