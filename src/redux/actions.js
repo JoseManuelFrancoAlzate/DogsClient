@@ -29,7 +29,7 @@ export const getDogs = ()=>{
     export const searchDogs =  (name)=>{
         return async function (dispatch) {
           try{
-            var api = await axios.get(`https://dogsback-rl6u.onrender.com/dogs?name=${name}`)
+            var api = await axios.get(`/dogs?name=${name}`)
             return dispatch({
                 type: SEARCH_DOGS,
                 payload: api.data
