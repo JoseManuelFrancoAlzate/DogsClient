@@ -1,0 +1,42 @@
+.card{
+    border: 5px solid black;
+    margin: 10px;
+ flex: 10%;
+ display: flex;
+ flex-direction: column;
+ flex-wrap:wrap;
+
+}
+
+
+
+.imgCss{
+  border: 5px solid black;
+  margin: 10px;
+  flex-grow: 1; /* Esto hará que la imagen ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 200px 
+  }
+
+  .footer{
+    background-color: grey;
+    padding: 10px
+    }
+    
+  .LetraCards{
+    color:rgb(209, 17, 17);
+    background-color: rgb(5, 5, 5);
+    border-radius: 15px;
+
+
+   }
+
+   .LetraCards:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(13, 16, 187);
+    border-radius: 15px
+
+   }
