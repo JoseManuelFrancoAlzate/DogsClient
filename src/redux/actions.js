@@ -14,7 +14,7 @@ export const getDogs = ()=>{
     return async function(dispatch){
         try{
             const dogsData = await axios.get(
-                "/dogs"
+                "https://dogsback-rl6u.onrender.com/dogs"
                 )
             const dogs = dogsData.data
             dispatch({type:GET_DOGS, payload: dogs})
@@ -29,7 +29,7 @@ export const getDogs = ()=>{
     export const searchDogs =  (name)=>{
         return async function (dispatch) {
           try{
-            var api = await axios.get(`/dogs?name=${name}`)
+            var api = await axios.get(`https://dogsback-rl6u.onrender.com/dogs?name=${name}`)
             return dispatch({
                 type: SEARCH_DOGS,
                 payload: api.data
@@ -63,7 +63,7 @@ export const getDogs = ()=>{
           export function getTemperaments() {
             return async function (dispatch) {
                 try {
-                    const res = await axios.get(`/temperaments`);
+                    const res = await axios.get(`https://dogsback-rl6u.onrender.com/temperaments`);
                     return dispatch({
                         type: GET_TEMPERAMENTS,
                         payload: res.data
@@ -85,7 +85,7 @@ export const getDogs = ()=>{
             export function postDogs(newDog){
                 return async function(dispatch){
                  try {
-                    const response= await axios.post('/dogs',newDog).data
+                    const response= await axios.post('https://dogsback-rl6u.onrender.com/dogs',newDog).data
 
                     console.log(Object.keys(response))
 
